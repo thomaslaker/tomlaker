@@ -1,0 +1,33 @@
+// Grid Settings
+
+// Columns 1/4
+$w-1-4: 22%;
+// Columns 1/6
+$w-1-6: 13.3333333%;
+// Gutter Width
+$gutter: 4%;
+
+// Build layout classes .w-#-# {}
+$class-slug: 'w';
+
+@for $i from 1 through 4 {
+    .#{$class-slug}-#{$i}-4 {
+        width: ($w-1-4 * $i) + ($gutter * ($i - 1));
+    }
+}
+
+@for $i from 1 through 6 {
+    .#{$class-slug}-#{$i}-6 {
+        width: ($w-1-6 * $i) + ($gutter * ($i - 1));
+    }
+}
+
+// Target all layout classes and float left
+div[class^='w-'] {
+    float: left;
+}
+
+// Gutter Class
+.gutter {
+    width: $gutter;
+}
