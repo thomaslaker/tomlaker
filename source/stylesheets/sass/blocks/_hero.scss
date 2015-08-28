@@ -1,0 +1,27 @@
+.hero {
+    background:
+    url('/images/desk-img.jpg') top right no-repeat;
+    // url('/images/desk-bg-left.jpg') repeat-x;
+    width: 100%;
+    height: 1000px;
+}
+
+%hero__bg {
+    position: absolute;
+
+    height: 100%;
+    z-index: -1;
+}
+
+.hero__bg--left {
+    @extend %hero__bg;
+    width: 75%;
+    background: url('/images/desk-bg-left.jpg') repeat-x;
+}
+
+.hero__bg--right {
+    @extend %hero__bg;
+    width: 25%;
+    background: url('/images/desk-bg-right.jpg') repeat-x;
+    right: 0;
+}
