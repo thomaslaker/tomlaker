@@ -1,9 +1,10 @@
 .hero {
     background:
-    url('/images/desk-img.jpg') top right no-repeat;
+    url('/images/desk-img.jpg') top right 4% no-repeat;
     // url('/images/desk-bg-left.jpg') repeat-x;
     width: 100%;
     height: 1000px;
+    color: $white;
 }
 
 %hero__bg {
