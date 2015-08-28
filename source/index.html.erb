@@ -1,6 +1,11 @@
 ---
 pageable: true
 per_page: 10
+nav_items:
+    - Projects
+    - Thoughts
+    - Photography
+    - Contact
 ---
 
 <div>
@@ -9,6 +14,13 @@ per_page: 10
     <div class="container hero">
         <header class="global-header">
             Tom Laker
+            <nav class="global-nav">
+                <ul>
+                    <% current_page.data.nav_items.each do |i| %>
+                    <li><%= i %></li>
+                    <% end %>
+                </ul>
+            </nav>
         </header>
     </div>
 </div>

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thomaslaker/tomlaker",
+  "authors": [
+    "Tom Laker <hello@tomlaker.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modular-scale": "~2.1.1"
+  }
+}
