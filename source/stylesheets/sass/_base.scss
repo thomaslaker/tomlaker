@@ -1,4 +1,5 @@
 @import 'modular-scale';
+@import 'mappy-breakpoints';
 
 @import 'settings/var';
 @import 'settings/global';
@@ -8,3 +9,6 @@
 
 @import 'blocks/hero';
 @import 'blocks/global-header';
+@import 'blocks/global-nav';
+
+@import 'elements/logo';
