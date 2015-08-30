@@ -1,0 +1,20 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin baseline-grid($baseline: 16px, $line-color-01: #ccc, $line-color-02: transparent) {
+     background: -webkit-repeating-linear-gradient(-90deg, $line-color-02, $line-color-02 $baseline, $line-color-01 ($baseline + 1));
+     background:    -moz-repeating-linear-gradient(-90deg, $line-color-02, $line-color-02 $baseline, $line-color-01 ($baseline + 1));
+     background:      -ms-repeating-linear-gradient(-90deg, $line-color-02, $line-color-02 $baseline, $line-color-01 ($baseline + 1));
+     background:      -o-repeating-linear-gradient(-90deg, $line-color-02, $line-color-02 $baseline, $line-color-01 ($baseline + 1));
+     // background:           repeating-linear-gradient(-90deg, $line-color-02, $line-color-02 $baseline, $line-color-01 ($baseline + 1));
+     z-index: 999;
+     height: 4958px;
+     width: 100%;
+     position: absolute;
+
+}

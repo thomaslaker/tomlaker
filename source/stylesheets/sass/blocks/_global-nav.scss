@@ -3,6 +3,28 @@
 }
 
 .global-nav__item {
-    float: left;
-    margin: 0 2.5rem;
+    display: none;
+    @include mappy-bp(med) {
+        display: block;
+        float: left;
+        margin: 0 2.5rem;
+    }
+}
+
+.global-nav__toggle {
+    display: flex;
+    align-items: center;
+    @include mappy-bp(med) {
+        display: none;
+    }
+}
+
+.icon-menu {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    &:hover {
+        fill: #000;
+    }
 }
