@@ -9,7 +9,7 @@ gulp.task('svg', function(){
     return gulp.src('source/images/icons/*.svg')
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rsp.remove({
-        properties: [rsp.PROPS_FILL]
+        properties: [rsp.PROPS_FILL, rsp.PROPS_STROKE]
     }))
     .pipe(gulp.dest('source/images/'));
 });
