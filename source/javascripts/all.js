@@ -16,4 +16,27 @@ $(document).ready(function(){
     }else if(hour >= 18 && hour <= 24) {
         welcomeMsg('Good Evening');
     }
+
+    $('#nav-toggle').on('click', function() {
+        $('.global-nav').css({'height': '100%'});
+        $('.global-nav__item').css({'display': 'block'});
+    });
+
+    $('#intro-toggle').on('click', function(){
+        $('#intro-more').slideDown();
+        $('#intro-toggle span').animate({
+            opacity: 0
+        });
+        $('#intro-toggle').animate({
+            height: 0,
+            paddingTop: 0,
+            paddingBottom: 0,
+            opacity: 0
+        });
+        $('#intro-line').css({
+            'max-height': 'none'
+        });
+    });
+
+
 });
