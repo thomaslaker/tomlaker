@@ -3,13 +3,19 @@
 $ms-base: 1em;
 $ms-ratio: 1.25;
 
-$typeface: "Gotham SSm A", "Gotham SSm B";
+$typeface: "Gotham SSm A", "Gotham SSm B", "helvetica", sans-serif;
 
 $white: #fff;
+$blue: #0db5e2;
+$dark-blue: #28144a;
+$washed-blue: #8b7fa3;
+$cream: #f7f7f1;
+$grey: #aa999d;
 
 $max-width: 87.5rem;
 
 $breakpoints: (
+    small: 580px,
     med-small: 800px,
     med: 950px
 )

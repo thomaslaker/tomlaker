@@ -10,10 +10,17 @@ $gutter: 4%;
 // Build layout classes .w-#-# {}
 $class-slug: 'w';
 
-@mixin grid-4($col) {
+@mixin grid-4($col, $comp:0) {
     @for $i from 1 through 4 {
         @if $col == $i {
-            width: ($w-1-4 * $i) + ($gutter * ($i - 1));
+            @if $comp == "half" {
+                $w-1-4: 19%;
+                $gutter: 8%;
+                width: ($w-1-4 * $i) + ($gutter * ($i - 1));
+            } @else {
+                width: ($w-1-4 * $i) + ($gutter * ($i - 1));
+            }
+
         }
     }
 }
@@ -26,17 +33,17 @@ $class-slug: 'w';
     }
 }
 
-// @for $i from 1 through 4 {
-//     .#{$class-slug}-#{$i}-4 {
-//         width: ($w-1-4 * $i) + ($gutter * ($i - 1));
-//     }
-// }
-//
-// @for $i from 1 through 6 {
-//     .#{$class-slug}-#{$i}-6 {
-//         width: ($w-1-6 * $i) + ($gutter * ($i - 1));
-//     }
-// }
+@for $i from 1 through 4 {
+    .push-#{$i}-4 {
+        margin-left: ($w-1-4 * $i) + ($gutter * ($i - 1));
+    }
+}
+
+@for $i from 1 through 6 {
+    .push-#{$i}-6 {
+        margin-left: ($w-1-6 * $i) + ($gutter * ($i - 1));
+    }
+}
 
 // Target all layout classes and float left
 div[class^='w-'] {

@@ -1,0 +1,17 @@
+.intro {
+    padding: 4rem 0;
+    display: flex;
+    @include mappy-bp(med) {
+        padding: 6rem 0;
+    }
+}
+
+.intro__line {
+    display: none;
+    @include mappy-bp(med) {
+        @include grid-4(2);
+        margin-left: $gutter;
+        stroke: #eaeaea;
+        max-height: 350px;
+    }
+}

@@ -1,7 +1,10 @@
 .hero-wrapper {
     position: relative;
     width: 100%;
-    background-color: #0db5e2;
+    background: url('/images/desk-bg-left.jpg') repeat-x;
+    background-color: $blue;
+    background-size: 270px auto;
+    background-position: bottom left;
 }
 
 .hero {
@@ -15,47 +18,5 @@
         background-position: bottom right;
         min-height: ms(17);
         background-size: 540px;
-    }
-}
-
-.hero__bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url('/images/desk-bg-left.jpg') repeat-x;
-    background-size: 270px auto;
-    background-position: bottom left;
-}
-
-
-.hero__content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-55%);
-    padding-right: 1rem;
-    @include mappy-bp(med-small) {
-        @include grid-4(3);
-    }
-    @include mappy-bp(med) {
-        width: auto;
-    }
-}
-
-.hero__welcome {
-    font-size: ms(0);
-    color: #017cb6;
-    font-weight: 700;
-    @include mappy-bp(med) {
-        font-size: ms(1);
-    }
-}
-
-.hero__heading {
-    font-size: ms(4);
-    font-weight: 700;
-    line-height: 1em;
-    margin: 0;
-    @include mappy-bp(med) {
-        font-size: ms(7);
     }
 }

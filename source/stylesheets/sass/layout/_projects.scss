@@ -1,0 +1,14 @@
+.projects {
+    background-color: $cream;
+    padding: 4rem 0;
+    @include clearfix();
+    @include mappy-bp(med) {
+        padding: 6rem 0;
+    }
+}
+
+.projects__row {
+    @include mappy-bp(med) {
+        display: flex;
+    }
+}

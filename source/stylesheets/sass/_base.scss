@@ -7,9 +7,16 @@
 @import 'settings/grid';
 
 @import 'layout/container';
+@import 'layout/projects';
+
 
 @import 'blocks/hero';
+@import 'blocks/hero__content';
+@import 'blocks/intro';
+@import 'blocks/intro__content';
 @import 'blocks/global-header';
 @import 'blocks/global-nav';
+@import 'blocks/projects__media';
 
+@import 'elements/btn';
 @import 'elements/logo';

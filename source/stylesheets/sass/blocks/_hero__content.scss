@@ -1,0 +1,31 @@
+.hero__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    padding-right: 1rem;
+    @include mappy-bp(med-small) {
+        @include grid-4(3);
+    }
+    @include mappy-bp(med) {
+        width: auto;
+    }
+}
+
+.hero__welcome {
+    font-size: ms(0);
+    color: #017cb6;
+    font-weight: 700;
+    @include mappy-bp(med) {
+        font-size: ms(1);
+    }
+}
+
+.hero__heading {
+    font-size: ms(4);
+    font-weight: 700;
+    line-height: 1em;
+    margin: 0;
+    @include mappy-bp(med) {
+        font-size: ms(7);
+    }
+}

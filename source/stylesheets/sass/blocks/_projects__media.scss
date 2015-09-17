@@ -1,0 +1,26 @@
+.projects__media {
+    float: left;
+    margin-top: 2rem;
+    margin-right: $gutter;
+    width: 100%;
+}
+
+.projects__media--small {
+    float: left;
+    margin-top: 2rem;
+    margin-right: $gutter;
+    @include grid-6(3);
+    @include mappy-bp(med-small) {
+        @include grid-6(1);
+    }
+}
+
+.projects__heading {
+    font-size: ms(0);
+    font-weight: 300;
+    color: $grey;
+}
+
+.projects__img {
+    width: 100%;
+}

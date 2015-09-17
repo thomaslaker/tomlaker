@@ -1,12 +1,25 @@
 .global-nav {
-    float: right;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 4%;
+    background-color: $blue;
+    z-index: 1;
+    @include mappy-bp(med) {
+        position: relative;
+        width: auto;
+        float: right;
+    }
 }
 
 .global-nav__item {
     display: none;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
     @include mappy-bp(med) {
-        display: block;
-        float: left;
+        display: inline-block;
+        width: auto;
         margin: 0 2.5rem;
     }
 }
@@ -14,6 +27,7 @@
 .global-nav__toggle {
     display: flex;
     align-items: center;
+    float: right;
     @include mappy-bp(med) {
         display: none;
     }
